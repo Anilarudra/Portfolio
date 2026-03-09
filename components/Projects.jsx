@@ -13,7 +13,7 @@ return(
 <div className="card">
 <h3>Faculty Course Assessment System</h3>
 <p>Java Servlet + MySQL based academic analysis system.</p>
-<p>Project Link : <a href="https://anilarudra.github.io/FCAAAS/" target="_self" rel="noopener noreferrer">GitHub Repository</a></p>
+<p>Project Link : <a style ={{color: "white", textDecoration: "none", fontSize: "1.1rem", fontWeight: "500"}} href="https://anilarudra.github.io/FCAAAS/" target="_self" rel="noopener noreferrer">GitHub Repository</a></p>
 </div>
 
 <div className="card">
