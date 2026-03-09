@@ -21,7 +21,8 @@ while contributing effectively to team projects.
 
 <div className="highlight-item">
 <h4>🎓 Education</h4>
-<p>Information Technology</p>
+<p>Bachelor of Technology - IT</p>
+<p>Passout Year - 2025</p>
 </div>
 
 <div className="highlight-item">
