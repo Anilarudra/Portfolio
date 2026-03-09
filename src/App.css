@@ -68,11 +68,11 @@ html {
   display: flex;
   gap: 40px;
   list-style: none;
-  margin-right: 5%;
+  margin: 0;
+  padding: 0;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  
 }
 
 .navbar li {
@@ -109,6 +109,88 @@ html {
 
 .navbar a:hover::after {
   width: 100%;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Mobile Menu */
+@media (max-width: 570px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+
+  .navbar h2 {
+    font-size: 1.1em;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.98);
+    padding: 20px 0;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-menu.active {
+    max-height: 300px;
+    overflow: visible;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu a {
+    font-size: 0.9em;
+  }
 }
 
 /* Hero */
