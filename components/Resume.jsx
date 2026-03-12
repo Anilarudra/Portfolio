@@ -17,7 +17,7 @@ function Resume() {
           skills and projects.
         </p>
         <button
-          onClick={() => downloadResume('https://drive.google.com/uc?export=download&id=1LGKim3tSdGMNXfEIBmOfsr-CtClikSfG')}
+          onClick={() => downloadResume('https://drive.google.com/uc?export=download&id=1h_Ux37RpQo6r11ezRNgJlhbBLhArnN76')}
           className="resume-btn"
         >
           Download Resume
